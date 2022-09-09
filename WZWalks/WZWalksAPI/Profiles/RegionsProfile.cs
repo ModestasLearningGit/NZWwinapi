@@ -7,7 +7,7 @@ namespace WZWalksAPI.Profiles
         public RegionsProfile()
         {
             CreateMap<Models.Domain.Region, Models.DTO.Region>();
-            // to map dest to src
+            // to map dest to src (Map properties)
                 /*.ForMember(dest => dest.Id, options => options.MapFrom(src => src.Id));*/
         }
     }
