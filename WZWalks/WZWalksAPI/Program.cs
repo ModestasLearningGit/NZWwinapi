@@ -20,7 +20,7 @@ builder.Services.AddDbContext<NZWalksDbContext>(options =>
 //injection of repositories by me
 builder.Services.AddScoped<IRegionReposatary, RegionReposatary>();
 builder.Services.AddScoped<IWalkRepository, WalkRepository>();
-
+builder.Services.AddScoped<IWalkDifficultyRepository, WalkDifficultyRepository>();
 //inject automapper by me
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
